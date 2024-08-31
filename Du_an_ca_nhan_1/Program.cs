@@ -16,7 +16,7 @@ namespace Du_an_ca_nhan_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new SignUpForm());
         }
     }
 }

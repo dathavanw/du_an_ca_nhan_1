@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Du_an_ca_nhan_1
 {
-    public partial class Form1 : Form
+    public partial class SignUpForm : Form
     {
-        public Form1()
+        public SignUpForm()
         {
             InitializeComponent();
+        }
+
+        private void SignUpForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
