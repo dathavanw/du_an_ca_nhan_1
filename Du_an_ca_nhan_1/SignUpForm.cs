@@ -21,5 +21,21 @@ namespace Du_an_ca_nhan_1
         {
 
         }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            string username = textBox1.Text;
+            string password = textBox2.Text;
+            if (username == "admin" && password == "admin")
+            {
+                MainForm mainform = new MainForm();
+                this.Hide();
+                mainform.Show();
+
+            }else
+            {
+                MessageBox.Show("Thông tin đăng nhập chưa đúng","Lỗi",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+        }
     }
 }
