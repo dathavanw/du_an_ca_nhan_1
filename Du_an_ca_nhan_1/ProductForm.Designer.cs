@@ -1,6 +1,6 @@
 ﻿namespace Du_an_ca_nhan_1
 {
-    partial class Form1
+    partial class ProductForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // ProductForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "ProductForm";
+            this.Text = "ProductForm";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
