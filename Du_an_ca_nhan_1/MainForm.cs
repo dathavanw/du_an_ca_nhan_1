@@ -16,5 +16,25 @@ namespace Du_an_ca_nhan_1
         {
             InitializeComponent();
         }
+
+        public void childform (Form form)
+        {
+            form.TopLevel = false;
+            form.FormBorderStyle  = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            panelShow.Controls.Clear();
+            panelShow.Controls.Add(form);
+            form.Show();
+        }
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.btnTaoHoaDon.Hide();
+            this.btnQuanLyKhachHang.Hide();
+            this.btnQuanLySanPham.Hide();
+            this.btnNhaCungCap.Hide();
+            this.btnNhapHang.Hide();
+            HomeForm homeform = new HomeForm();
+            childform(homeform);
+        }
     }
 }
