@@ -91,6 +91,7 @@
             this.btnInvoices.TabIndex = 5;
             this.btnInvoices.Text = "Tạo hóa đơn ";
             this.btnInvoices.UseVisualStyleBackColor = true;
+            this.btnInvoices.Click += new System.EventHandler(this.btnInvoices_Click);
             // 
             // btnSuppliers
             // 
@@ -101,6 +102,7 @@
             this.btnSuppliers.TabIndex = 4;
             this.btnSuppliers.Text = "Nhà cung cấp";
             this.btnSuppliers.UseVisualStyleBackColor = true;
+            this.btnSuppliers.Click += new System.EventHandler(this.btnSuppliers_Click);
             // 
             // btnOrders
             // 
@@ -111,6 +113,7 @@
             this.btnOrders.TabIndex = 3;
             this.btnOrders.Text = "Nhập hàng";
             this.btnOrders.UseVisualStyleBackColor = true;
+            this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
             // 
             // btnProduct
             // 
@@ -121,6 +124,7 @@
             this.btnProduct.TabIndex = 2;
             this.btnProduct.Text = "Quản lý sản phẩm ";
             this.btnProduct.UseVisualStyleBackColor = true;
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // btnCustomers
             // 
@@ -131,6 +135,7 @@
             this.btnCustomers.TabIndex = 1;
             this.btnCustomers.Text = "Quản Lý khách hàng";
             this.btnCustomers.UseVisualStyleBackColor = true;
+            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
             // btnHome
             // 
@@ -181,6 +186,7 @@
             this.btnNhaCungCap.TabIndex = 6;
             this.btnNhaCungCap.Text = "Nhà cung cấp ";
             this.btnNhaCungCap.UseVisualStyleBackColor = true;
+            this.btnNhaCungCap.Click += new System.EventHandler(this.btnNhaCungCap_Click);
             // 
             // btnNhapHang
             // 
@@ -191,6 +197,7 @@
             this.btnNhapHang.TabIndex = 5;
             this.btnNhapHang.Text = "Nhập hàng";
             this.btnNhapHang.UseVisualStyleBackColor = true;
+            this.btnNhapHang.Click += new System.EventHandler(this.btnNhapHang_Click);
             // 
             // btnQuanLySanPham
             // 
@@ -201,6 +208,7 @@
             this.btnQuanLySanPham.TabIndex = 4;
             this.btnQuanLySanPham.Text = "Quản lý sản phẩm ";
             this.btnQuanLySanPham.UseVisualStyleBackColor = true;
+            this.btnQuanLySanPham.Click += new System.EventHandler(this.btnQuanLySanPham_Click);
             // 
             // btnQuanLyKhachHang
             // 
@@ -211,6 +219,7 @@
             this.btnQuanLyKhachHang.TabIndex = 3;
             this.btnQuanLyKhachHang.Text = "Quản lý khách hàng";
             this.btnQuanLyKhachHang.UseVisualStyleBackColor = true;
+            this.btnQuanLyKhachHang.Click += new System.EventHandler(this.btnQuanLyKhachHang_Click);
             // 
             // btnTaoHoaDon
             // 
@@ -221,6 +230,7 @@
             this.btnTaoHoaDon.TabIndex = 2;
             this.btnTaoHoaDon.Text = "Tạo hóa đơn ";
             this.btnTaoHoaDon.UseVisualStyleBackColor = true;
+            this.btnTaoHoaDon.Click += new System.EventHandler(this.btnTaoHoaDon_Click);
             // 
             // panel6
             // 
