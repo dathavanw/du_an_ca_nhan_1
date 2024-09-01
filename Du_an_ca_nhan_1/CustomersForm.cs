@@ -18,13 +18,19 @@ namespace Du_an_ca_nhan_1
         {
             InitializeComponent();
         }
-
-        string stringConnect = @"";
-        SqlConnection SqlConnection = null;
-        DataAdapter adapter;
-        DataTable table; 
+        SqlConnection connect = null;
+        string stringConnect = "Data Source=LAPTOP-AOL11CSJ\\SQLEXPRESS01;Initial Catalog=CuaHangHoa;Integrated Security=True";
+        DataTable table;
+        SqlDataAdapter adapter;
         private void CustomersForm_Load(object sender, EventArgs e)
         {
+            connect = new SqlConnection(stringConnect);
+            connect.Open();
+            string sql_select = "select * from Customers ";
+            adapter = new SqlDataAdapter(sql_select, connect);
+            table = new DataTable();
+            adapter.Fill(table);
+            dataCustomers.DataSource = table;
 
         }
     }

@@ -54,6 +54,7 @@
             this.button8.TabIndex = 4;
             this.button8.Text = "Quản lý khách hàng";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
