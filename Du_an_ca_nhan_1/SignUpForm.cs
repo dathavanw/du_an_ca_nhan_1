@@ -17,6 +17,10 @@ namespace Du_an_ca_nhan_1
             InitializeComponent();
         }
 
+
+
+
+
         private void SignUpForm_Load(object sender, EventArgs e)
         {
 
