@@ -48,8 +48,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panelShow = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -277,14 +277,6 @@
             this.label1.Text = "Xin chào admin ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel4
-            // 
-            this.panel4.AutoScroll = true;
-            this.panel4.Location = new System.Drawing.Point(3, 4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(233, 492);
-            this.panel4.TabIndex = 2;
-            // 
             // panelShow
             // 
             this.panelShow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -294,6 +286,14 @@
             this.panelShow.Name = "panelShow";
             this.panelShow.Size = new System.Drawing.Size(733, 353);
             this.panelShow.TabIndex = 7;
+            // 
+            // panel4
+            // 
+            this.panel4.AutoScroll = true;
+            this.panel4.Location = new System.Drawing.Point(3, 4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(233, 492);
+            this.panel4.TabIndex = 2;
             // 
             // MainForm
             // 
@@ -305,6 +305,7 @@
             this.Controls.Add(this.panel4);
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

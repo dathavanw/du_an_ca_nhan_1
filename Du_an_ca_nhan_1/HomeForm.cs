@@ -21,8 +21,8 @@ namespace Du_an_ca_nhan_1
         private void button8_Click(object sender, EventArgs e)
         {
             //ButtonHide();
-            //CustomersForm custormersform = new CustomersForm();
-            //childform(custormersform);
+            CustomersForm custormersform = new CustomersForm();
+           // childform(custormersform);
            
         }
     }

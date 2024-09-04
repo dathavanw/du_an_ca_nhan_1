@@ -33,7 +33,7 @@
             this.btnXoaKhachHang = new System.Windows.Forms.Button();
             this.btnSuaThongTin = new System.Windows.Forms.Button();
             this.btnTimKiemKhachHang = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -102,14 +102,15 @@
             this.btnTimKiemKhachHang.TabIndex = 4;
             this.btnTimKiemKhachHang.Text = "Tìm kiếm";
             this.btnTimKiemKhachHang.UseVisualStyleBackColor = true;
+            this.btnTimKiemKhachHang.Click += new System.EventHandler(this.btnTimKiemKhachHang_Click);
             // 
-            // textBox1
+            // txtTimKiem
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox1.Location = new System.Drawing.Point(634, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(330, 34);
-            this.textBox1.TabIndex = 5;
+            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTimKiem.Location = new System.Drawing.Point(634, 12);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(330, 34);
+            this.txtTimKiem.TabIndex = 5;
             // 
             // label1
             // 
@@ -191,7 +192,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btnTimKiemKhachHang);
             this.Controls.Add(this.btnSuaThongTin);
             this.Controls.Add(this.btnXoaKhachHang);
@@ -213,7 +214,7 @@
         private System.Windows.Forms.Button btnXoaKhachHang;
         private System.Windows.Forms.Button btnSuaThongTin;
         private System.Windows.Forms.Button btnTimKiemKhachHang;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

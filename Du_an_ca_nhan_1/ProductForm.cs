@@ -16,5 +16,10 @@ namespace Du_an_ca_nhan_1
         {
             InitializeComponent();
         }
+
+        private void ProductForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

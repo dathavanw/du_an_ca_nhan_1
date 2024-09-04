@@ -89,5 +89,16 @@ namespace Du_an_ca_nhan_1
             table.Rows.Clear ();
             adapter.Fill(table);
         }
+
+        private void btnTimKiemKhachHang_Click(object sender, EventArgs e)
+        {
+            string id_timkiem = txtTimKiem.Text;
+            string sql_timkiem = "select * from Customers where customerID like '%" + id_timkiem + "'";
+            SqlCommand cmd = new SqlCommand(sql_timkiem, connect);
+            cmd.ExecuteNonQuery();
+            table.Rows.Clear();
+            adapter.Fill(table);
+
+        }
     }
 }

@@ -122,10 +122,9 @@ namespace Du_an_ca_nhan_1
             childform(invoicesForm);
         }
 
+        private void MainForm_Load(object sender, EventArgs e)
+        {
 
-
-
-
-
+        }
     }
 }
