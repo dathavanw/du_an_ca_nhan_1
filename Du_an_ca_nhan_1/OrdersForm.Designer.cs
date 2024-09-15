@@ -35,6 +35,7 @@
             this.dataOrders = new System.Windows.Forms.DataGridView();
             this.btnChiTietNhapHang = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnNhapHoaMoi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataOrders)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,9 +77,12 @@
             this.cmbSuppliers.Name = "cmbSuppliers";
             this.cmbSuppliers.Size = new System.Drawing.Size(231, 39);
             this.cmbSuppliers.TabIndex = 14;
+            this.cmbSuppliers.SelectedIndexChanged += new System.EventHandler(this.cmbSuppliers_SelectedIndexChanged);
             // 
             // dataOrders
             // 
+            this.dataOrders.AllowUserToAddRows = false;
+            this.dataOrders.AllowUserToDeleteRows = false;
             this.dataOrders.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -88,7 +92,7 @@
             this.dataOrders.Name = "dataOrders";
             this.dataOrders.RowHeadersWidth = 51;
             this.dataOrders.RowTemplate.Height = 24;
-            this.dataOrders.Size = new System.Drawing.Size(1065, 220);
+            this.dataOrders.Size = new System.Drawing.Size(1065, 246);
             this.dataOrders.TabIndex = 15;
             this.dataOrders.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataOrders_CellClick);
             // 
@@ -97,7 +101,7 @@
             this.btnChiTietNhapHang.BackColor = System.Drawing.Color.Cyan;
             this.btnChiTietNhapHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnChiTietNhapHang.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnChiTietNhapHang.Location = new System.Drawing.Point(487, 58);
+            this.btnChiTietNhapHang.Location = new System.Drawing.Point(296, 119);
             this.btnChiTietNhapHang.Name = "btnChiTietNhapHang";
             this.btnChiTietNhapHang.Size = new System.Drawing.Size(231, 55);
             this.btnChiTietNhapHang.TabIndex = 16;
@@ -107,12 +111,23 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(192, 122);
+            this.button2.Location = new System.Drawing.Point(45, 119);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(231, 55);
             this.button2.TabIndex = 17;
             this.button2.Text = "TÌM KIẾM DANH SÁCH";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // btnNhapHoaMoi
+            // 
+            this.btnNhapHoaMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnNhapHoaMoi.Location = new System.Drawing.Point(662, 119);
+            this.btnNhapHoaMoi.Name = "btnNhapHoaMoi";
+            this.btnNhapHoaMoi.Size = new System.Drawing.Size(231, 55);
+            this.btnNhapHoaMoi.TabIndex = 18;
+            this.btnNhapHoaMoi.Text = "NHẬP HOA MỚI ";
+            this.btnNhapHoaMoi.UseVisualStyleBackColor = true;
+            this.btnNhapHoaMoi.Click += new System.EventHandler(this.btnNhapHoaMoi_Click);
             // 
             // OrdersForm
             // 
@@ -120,6 +135,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1070, 450);
+            this.Controls.Add(this.btnNhapHoaMoi);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnChiTietNhapHang);
             this.Controls.Add(this.dataOrders);
@@ -145,5 +161,6 @@
         private System.Windows.Forms.DataGridView dataOrders;
         private System.Windows.Forms.Button btnChiTietNhapHang;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnNhapHoaMoi;
     }
 }

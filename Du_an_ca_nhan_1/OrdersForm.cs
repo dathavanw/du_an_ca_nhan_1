@@ -34,6 +34,19 @@ namespace Du_an_ca_nhan_1
             table = new DataTable();
             adapter.Fill(table);
             dataOrders.DataSource = table;
+
+            string query = "SELECT supplierName FROM Suppliers";
+            SqlCommand cmd = new SqlCommand(query, connect);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            // Gán dữ liệu vào ComboBox
+            cmbSuppliers.DataSource = dt;
+            cmbSuppliers.DisplayMember = "supplierName";  
+         
+
+
         }
 
         private void dataOrders_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -45,6 +58,20 @@ namespace Du_an_ca_nhan_1
                 cmbSuppliers.Text = table.Rows[vitrichon2][2].ToString();
                 btnChiTietNhapHang.Visible = true;
             }
+        }
+
+        private void cmbSuppliers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+
+
+
+        }
+
+        private void btnNhapHoaMoi_Click(object sender, EventArgs e)
+        {
+            Suppliers_CatagorForm suppliers_CatagorForm = new Suppliers_CatagorForm();
+            suppliers_CatagorForm.Show();
         }
     }
 }
